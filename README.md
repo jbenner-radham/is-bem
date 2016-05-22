@@ -15,7 +15,7 @@ $ npm install --save is-bem
 Usage
 -----
 ```js
-var isBem = require('is-bem');
+const isBem = require('is-bem');
 
 isBem('block'); // True
 isBem('block__element_modifier'); // True

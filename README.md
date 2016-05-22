@@ -1,5 +1,5 @@
 # is-bem [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Is valid BEM name?
+> Determine if a class name is valid BEM.
 
 ## Installation
 
@@ -10,9 +10,10 @@ $ npm install --save is-bem
 ## Usage
 
 ```js
-var isValidBem = require('is-bem');
+var isBem = require('is-bem');
 
-isValidBem('Rainbow');
+isBem('Rainbow'); // False
+isBem('block__element_modifier'); // True
 ```
 ## License
 

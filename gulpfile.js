@@ -1,13 +1,13 @@
 'use strict';
 
-const path = require('path');
-const gulp = require('gulp');
-const eslint = require('gulp-eslint');
+const path             = require('path');
+const gulp             = require('gulp');
+const eslint           = require('gulp-eslint');
 const excludeGitignore = require('gulp-exclude-gitignore');
-const mocha = require('gulp-mocha');
-const istanbul = require('gulp-istanbul');
-const nsp = require('gulp-nsp');
-const plumber = require('gulp-plumber');
+const mocha            = require('gulp-mocha');
+const istanbul         = require('gulp-istanbul');
+const nsp              = require('gulp-nsp');
+const plumber          = require('gulp-plumber');
 
 gulp.task('static', function () {
     return gulp.src('**/*.js')

@@ -12,8 +12,9 @@ $ npm install --save is-bem
 ```js
 var isBem = require('is-bem');
 
-isBem('Rainbow'); // False
+isBem('block'); // True
 isBem('block__element_modifier'); // True
+isBem('block--element--modifier'); // False
 ```
 ## License
 

@@ -12,6 +12,10 @@ describe('is-valid-variant-bem', function () {
         expect(isBem('block__element_modifier_value')).to.equal(true);
     });
 
+    it('should validate "block"', function () {
+        expect(isBem('block')).to.equal(true);
+    })
+
     it('should validate "block__element"', function () {
         expect(isBem('block__element')).to.equal(true);
     });
@@ -24,12 +28,16 @@ describe('is-valid-variant-bem', function () {
         expect(isBem('block_modifier_value')).to.equal(true);
     });
 
-    it('should not validate "blockelementmodifier"', function () {
-        expect(isBem('blockelementmodifier')).to.equal(false);
+    it('should not validate "block__element__modifier"', function () {
+        expect(isBem('block__element__modifier')).to.equal(false);
+    })
+
+    it('should not validate "block--element--modifier"', function () {
+        expect(isBem('block--element--modifier')).to.equal(false);
     })
 
     it('should not validate "block__element--modifier"', function () {
-        expect(isBem('blockelementmodifier')).to.equal(false);
+        expect(isBem('block__element--modifier')).to.equal(false);
     })
 
     it('should not validate block__element_modifier_value_undefined', function () {

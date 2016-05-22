@@ -20,7 +20,7 @@ isBem('block__element_modifier'); // True
 MIT © [James Benner](www.jamesbenner.com)
 
 
-[npm-image]: https://badge.fury.io/js/is-bem.svg
+[npm-image]: https://img.shields.io/npm/v/is-bem.svg
 [npm-url]: https://npmjs.org/package/is-bem
 [travis-image]: https://travis-ci.org/jbenner-radham/is-bem.svg?branch=master
 [travis-url]: https://travis-ci.org/jbenner-radham/is-bem
